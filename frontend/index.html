@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic Appointment System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Clinic Appointment Management</h1>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Patient Management -->
+    <section id="patient-management">
+      <h2>🧑‍⚕️ Patient Management</h2>
+      <form id="patientForm">
+        <label for="patientName">Name</label>
+        <input type="text" id="patientName" placeholder="Patient Name" required />
+        <label for="patientAge">Age</label>
+        <input type="number" id="patientAge" placeholder="Patient Age" required />
+        
+        <!-- Hidden optional fields for backend -->
+        <input type="hidden" id="patientGender" value="NA" />
+        <input type="hidden" id="patientPhone" value="NA" />
+
+        <button type="submit">Add Patient</button>
+      </form>
+      <div id="patientList">
+        <h3>Registered Patients</h3>
+        <ul id="patientsContainer"></ul>
+      </div>
+    </section>
+
+    <!-- Doctor Management -->
+    <section id="doctor-management">
+      <h2>👨‍⚕️ Doctor Management</h2>
+      <form id="doctorForm">
+        <label for="doctorName">Name</label>
+        <input type="text" id="doctorName" placeholder="Doctor Name" required />
+        <label for="doctorSlots">Slots (space separated, e.g., 10:00-11:00 11:00-12:00)</label>
+        <input type="text" id="doctorSlots" placeholder="Slots" required />
+        <button type="submit">Add Doctor</button>
+      </form>
+      <div id="doctorList">
+        <h3>Registered Doctors</h3>
+        <ul id="doctorsContainer"></ul>
+      </div>
+    </section>
+
+    <!-- Appointment Scheduling -->
+    <section id="schedule-appointment">
+      <h2>🗓️ Schedule Appointment</h2>
+      <form id="appointmentForm">
+        <label for="appointmentPatient">Patient</label>
+        <select id="appointmentPatient" required>
+          <option value="">-- Select Patient --</option>
+        </select>
+        <label for="appointmentDoctor">Doctor</label>
+        <select id="appointmentDoctor" required>
+          <option value="">-- Select Doctor --</option>
+        </select>
+        <label for="appointmentDate">Date</label>
+        <input type="date" id="appointmentDate" required />
+        <label for="appointmentTime">Time Slot</label>
+        <select id="appointmentTime" required>
+          <option value="">-- Select Slot --</option>
+        </select>
+        <button type="submit">Book Appointment</button>
+        <p id="appointmentMessage"></p>
+      </form>
+    </section>
+
+    <!-- Scheduled Appointments -->
+    <section id="scheduled-appointments">
+      <h2>📋 Scheduled Appointments</h2>
+      <div id="appointmentsContainer"></div>
+    </section>
+
+    <!-- Cancelled Appointments -->
+    <section id="cancelled-appointments">
+     <h2>❌ Cancelled Appointments</h2>
+     <div id="cancelledAppointmentsContainer"></div>
+    </section>
+
+
+    <!-- Activity Logs -->
+    <section id="logs-section">
+      <h2>📜 Activity Logs</h2>
+      <ul id="logsContainer"></ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

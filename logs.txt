@@ -1,0 +1,14 @@
+System Boot: Log initialized
+
+[Fri, 21 Nov 2025 00:36:28] Added doctor: D1 - Dr. Matthews
+[Fri, 21 Nov 2025 00:49:01] Added doctor: D2 - Dr. Mrudula Kotgire
+[Fri, 21 Nov 2025 00:49:33] Added patient: P6 - Laura seths (Age 20, Gender F)
+[Fri, 21 Nov 2025 01:03:49] Booked appointment: Patient P1 with Doctor D1 on 2025-11-21 at 09:00-10:00
+[2025-11-20T19:34:19.983Z] Cancelled appointment: P1 with D1 on 2025-11-21 at 09:00-10:00
+[Fri, 21 Nov 2025 01:04:28] Rescheduled appointment: Patient P1 from 2025-11-21 09:00-10:00 to 2025-11-21 10:00-11:00
+[Fri, 21 Nov 2025 01:07:04] Added doctor: D3 - Dr.  Sarah Sarpotdar
+[Fri, 21 Nov 2025 01:07:38] Added patient: P7 - Milonee Pratape (Age 19, Gender F)
+
+[2025-11-21 08:12:07] Booked appointment: Patient P1 with Doctor D1 on 2025-11-21 at 10:00-11:00
+[2025-11-21 10:06:24] Added patient: P8 - Ayaan Kapoor (Age 17, Gender M)
+[2025-11-21 10:06:47] Rescheduled appointment: Patient P2 from 2025-11-21 11:00-12:00 to 2025-11-21 10:00-11:00

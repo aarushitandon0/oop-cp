@@ -1,0 +1,8 @@
+P1,Srushti Lonare,22,N/A,N/A
+P2,Shivi Jatta,18,N/A,N/A
+P3,Mason Tailor,13,M,9876543210
+P4,Sarah williams,12,F,9765431901
+P5,Josh Chen,19,M,9876543210
+P6,Laura seths,20,F,9876325101
+P7,Milonee Pratape,19,F,987654210
+P8,Ayaan Kapoor,17,M,9967213192
