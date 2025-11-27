@@ -8,66 +8,66 @@ This project handles patient management, doctor management, appointment booking,
 
 👤 Patient Management
 
--Add patients with name, age, gender, and phone number
+- Add patients with name, age, gender, and phone number
 
--Auto-generated Patient IDs (P1, P2, …)
+- Auto-generated Patient IDs (P1, P2, …)
 
--Stored in patients.txt
+- Stored in patients.txt
 
 🩺 Doctor Management
 
--Add doctors with name + available time slots
+- Add doctors with name + available time slots
 
--Auto-generated Doctor IDs (D1, D2, …)
+- Auto-generated Doctor IDs (D1, D2, …)
 
--Stored in doctors.txt
+- Stored in doctors.txt
 
 📅 Appointment Booking
 
--Select patient → doctor → date → slot
+- Select patient → doctor → date → slot
 
--System checks if the slot is free
+- System checks if the slot is free
 
--Saves the appointment in appointments.txt
+- Saves the appointment in appointments.txt
 
--Status is saved as active
+- Status is saved as active
 
 🔄 Rescheduling
 
--Allows changing date & time
+- Allows changing date & time
 
--Old appointment updated safely
+- Old appointment updated safely
 
--Prevents conflicts and double bookings
+- Prevents conflicts and double bookings
 
 ❌ Cancellation
 
--Appointments aren’t deleted — they’re flagged as cancelled
+- Appointments aren’t deleted — they’re flagged as cancelled
 
--Cancelled appointments appear in a separate UI section
+- Cancelled appointments appear in a separate UI section
 
--Helps maintain an audit trail
+- Helps maintain an audit trail
 
 📝 Real-Time Logging
 
--Every action (add, book, cancel, reschedule) is logged in logs.txt
+- Every action (add, book, cancel, reschedule) is logged in logs.txt
 
--Frontend auto-refreshes logs every 2 seconds
+- Frontend auto-refreshes logs every 2 seconds
 
 
 
 🧠 How the Architecture Works
  1. Frontend (HTML + JS)
 
- -Provides a simple dashboard to manage the system
+ - Provides a simple dashboard to manage the system
 
- -Uses fetch() to talk to the backend
+ - Uses fetch() to talk to the backend
 
- -Dynamically loads patients, doctors, slots, and appointments
+ - Dynamically loads patients, doctors, slots, and appointments
 
- -Displays active and cancelled appointments separately
+ - Displays active and cancelled appointments separately
 
- -Real-time log viewer
+ - Real-time log viewer
 
 2. Backend (Node.js Express)
     <!DOCTYPE html>
@@ -98,19 +98,19 @@ This project handles patient management, doctor management, appointment booking,
 
  Handles business logic:
 
- -ID generation
+ - ID generation
 
- -Slot validation
+ - Slot validation
 
- -Appointment updates
+ - Appointment updates
 
- -File handling
+ - File handling
 
- -Data persistence
+ - Data persistence
 
- -Status handling (active/cancelled)
+ - Status handling (active/cancelled)
 
- -Event logging
+ - Event logging
 
 
   [Project Text Files]
